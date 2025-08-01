@@ -57,25 +57,9 @@ abstract class AppThemeColorStoreBase with Store {
   }
 
   @action
-  Future<void> changePurpleColorTheme() async {
-    colorThemeState = colorThemeState.colorPurpleTheme();
-    themeColorKey = 'isPurpleColorTheme';
-    await localStorage.setItem(key: themeColorKey, value: true);
-    await localStorage.setItem(key: 'currentColorKey', value: themeColorKey);
-  }
-
-  @action
   Future<void> changeCyanColorTheme() async {
     colorThemeState = colorThemeState.colorCyanTheme();
     themeColorKey = 'isCyanColorTheme';
-    await localStorage.setItem(key: themeColorKey, value: true);
-    await localStorage.setItem(key: 'currentColorKey', value: themeColorKey);
-  }
-
-  @action
-  Future<void> changeOrangeColorTheme() async {
-    colorThemeState = colorThemeState.colorOrangeTheme();
-    themeColorKey = 'isOrangeColorTheme';
     await localStorage.setItem(key: themeColorKey, value: true);
     await localStorage.setItem(key: 'currentColorKey', value: themeColorKey);
   }
@@ -103,15 +87,11 @@ abstract class AppThemeColorStoreBase with Store {
         case 'isBlueColorTheme':
           colorThemeState = colorThemeState.colorBlueTheme();
           break;
-        case 'isPurpleColorTheme':
-          colorThemeState = colorThemeState.colorPurpleTheme();
-          break;
+
         case 'isCyanColorTheme':
           colorThemeState = colorThemeState.colorCyanTheme();
           break;
-        case 'isOrangeColorTheme':
-          colorThemeState = colorThemeState.colorOrangeTheme();
-          break;
+
         default:
           colorThemeState = colorThemeState.colorDefaultTheme();
       }
