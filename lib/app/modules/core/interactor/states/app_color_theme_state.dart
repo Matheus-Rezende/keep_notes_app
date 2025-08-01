@@ -12,8 +12,6 @@ sealed class AppColorThemeState {
   AppColorThemeYellowState colorYellowTheme() => AppColorThemeYellowState();
   AppColorThemeBlueState colorBlueTheme() => AppColorThemeBlueState();
   AppColorThemeCyanState colorCyanTheme() => AppColorThemeCyanState();
-  AppColorThemeOrangeState colorOrangeTheme() => AppColorThemeOrangeState();
-  AppColorThemePurpleState colorPurpleTheme() => AppColorThemePurpleState();
 }
 
 class AppColorThemeRedState extends AppColorThemeState {
@@ -36,16 +34,8 @@ class AppColorThemePinkState extends AppColorThemeState {
   AppColorThemePinkState() : super(colorTheme: AppColors().solidPinkColor);
 }
 
-class AppColorThemePurpleState extends AppColorThemeState {
-  AppColorThemePurpleState() : super(colorTheme: AppColors().solidPurpleColor);
-}
-
 class AppColorThemeCyanState extends AppColorThemeState {
   AppColorThemeCyanState() : super(colorTheme: AppColors().solidCyanColor);
-}
-
-class AppColorThemeOrangeState extends AppColorThemeState {
-  AppColorThemeOrangeState() : super(colorTheme: AppColors().solidOrangeColor);
 }
 
 class AppColorThemeDefaultState extends AppColorThemeState {

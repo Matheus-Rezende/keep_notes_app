@@ -87,18 +87,6 @@ mixin _$AppThemeColorStore on AppThemeColorStoreBase, Store {
     );
   }
 
-  late final _$changePurpleColorThemeAsyncAction = AsyncAction(
-    'AppThemeColorStoreBase.changePurpleColorTheme',
-    context: context,
-  );
-
-  @override
-  Future<void> changePurpleColorTheme() {
-    return _$changePurpleColorThemeAsyncAction.run(
-      () => super.changePurpleColorTheme(),
-    );
-  }
-
   late final _$changeCyanColorThemeAsyncAction = AsyncAction(
     'AppThemeColorStoreBase.changeCyanColorTheme',
     context: context,
@@ -108,18 +96,6 @@ mixin _$AppThemeColorStore on AppThemeColorStoreBase, Store {
   Future<void> changeCyanColorTheme() {
     return _$changeCyanColorThemeAsyncAction.run(
       () => super.changeCyanColorTheme(),
-    );
-  }
-
-  late final _$changeOrangeColorThemeAsyncAction = AsyncAction(
-    'AppThemeColorStoreBase.changeOrangeColorTheme',
-    context: context,
-  );
-
-  @override
-  Future<void> changeOrangeColorTheme() {
-    return _$changeOrangeColorThemeAsyncAction.run(
-      () => super.changeOrangeColorTheme(),
     );
   }
 

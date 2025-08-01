@@ -150,20 +150,6 @@ class SettingsPage extends StatelessWidget {
                             height: 40.0,
                             width: 40.0,
                             borderRadius: 50.0,
-                            backgroundColor: appTheme.colors.solidPurpleColor,
-                            borderColor: themeColorStore.colorThemeState is AppColorThemePurpleState
-                                ? (themeStore.isLight
-                                      ? appTheme.colors.blackColor
-                                      : appTheme.colors.whiteColor)
-                                : null,
-                            onPressed: () {
-                              themeColorStore.changePurpleColorTheme();
-                            },
-                          ),
-                          CustomButtonWidget(
-                            height: 40.0,
-                            width: 40.0,
-                            borderRadius: 50.0,
                             backgroundColor: appTheme.colors.solidCyanColor,
                             borderColor: themeColorStore.colorThemeState is AppColorThemeCyanState
                                 ? (themeStore.isLight
@@ -172,20 +158,6 @@ class SettingsPage extends StatelessWidget {
                                 : null,
                             onPressed: () {
                               themeColorStore.changeCyanColorTheme();
-                            },
-                          ),
-                          CustomButtonWidget(
-                            height: 40.0,
-                            width: 40.0,
-                            borderRadius: 50.0,
-                            backgroundColor: appTheme.colors.solidOrangeColor,
-                            borderColor: themeColorStore.colorThemeState is AppColorThemeOrangeState
-                                ? (themeStore.isLight
-                                      ? appTheme.colors.blackColor
-                                      : appTheme.colors.whiteColor)
-                                : null,
-                            onPressed: () {
-                              themeColorStore.changeOrangeColorTheme();
                             },
                           ),
                         ],

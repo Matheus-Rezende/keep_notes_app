@@ -19,10 +19,8 @@ class AppColors {
   // SOLID COLORS
   final Color solidPinkColor = const Color.fromARGB(255, 252, 73, 255);
   final Color solidRedColor = const Color.fromARGB(255, 254, 3, 3);
-  final Color solidOrangeColor = const Color.fromARGB(255, 254, 95, 3);
   final Color solidGreenColor = const Color.fromARGB(255, 67, 255, 64);
   final Color solidYellowColor = const Color.fromARGB(255, 255, 236, 69);
   final Color solidCyanColor = const Color.fromARGB(255, 94, 255, 255);
   final Color solidBlueColor = const Color.fromARGB(255, 0, 55, 255);
-  final Color solidPurpleColor = const Color.fromARGB(255, 83, 20, 255);
 }
