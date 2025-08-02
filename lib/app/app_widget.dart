@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:flutter_quill/flutter_quill.dart';
 import 'package:keep_notes_app/app/modules/core/interactor/stores/app_theme_color_store.dart';
 import 'package:keep_notes_app/app/modules/core/interactor/stores/app_theme_store.dart';
 import 'package:keep_notes_app/app/modules/core/theme/app_theme.dart';
@@ -35,6 +36,7 @@ class _AppWidgetState extends State<AppWidget> {
           debugShowCheckedModeBanner: false,
           routerDelegate: Modular.routerDelegate,
           routeInformationParser: Modular.routeInformationParser,
+          localizationsDelegates: [FlutterQuillLocalizations.delegate],
         );
       },
     );

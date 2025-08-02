@@ -1,4 +1,4 @@
 class AppRoutes {
   static const settings = '/settings/';
-  static const createNote = '/create-note';
+  static const noteEditor = '/note-editor';
 }

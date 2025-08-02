@@ -86,7 +86,7 @@ class NotesPage extends StatelessWidget {
         width: 70.0,
         borderRadius: 50.0,
         hasShadow: true,
-        onPressed: () => Modular.to.pushNamed(AppRoutes.createNote),
+        onPressed: () => Modular.to.pushNamed(AppRoutes.noteEditor),
       ),
     );
   }

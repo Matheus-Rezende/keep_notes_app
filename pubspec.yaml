@@ -18,6 +18,7 @@ dependencies:
   drift: ^2.28.1
   sqlite3_flutter_libs: ^0.5.38
   shared_preferences: ^2.5.3
+  flutter_quill: ^11.4.2
 
 dev_dependencies:
   flutter_test:
