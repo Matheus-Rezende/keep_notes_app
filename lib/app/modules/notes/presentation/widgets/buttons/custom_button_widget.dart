@@ -57,7 +57,7 @@ class CustomButtonWidget extends StatelessWidget {
         ),
         child: icon != null
             ? Center(child: Icon(icon, size: iconSize))
-            : Text(title ?? '', style: titleStyle),
+            : Center(child: Text(title ?? '', style: titleStyle)),
       ),
     );
   }

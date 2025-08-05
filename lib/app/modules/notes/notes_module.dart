@@ -16,8 +16,8 @@ class NotesModule extends Module {
 
   @override
   void routes(RouteManager r) {
-    r.child(Modular.initialRoute, child: (context) => NotesPage());
-    r.child('/note-editor', child: (context) => NoteEditorPage());
+    r.child(Modular.initialRoute, child: (context) => NotesPage(), transition: TransitionType.fadeIn);
+    r.child('/note-editor', child: (context) => NoteEditorPage(), transition: TransitionType.fadeIn);
 
     super.routes(r);
   }

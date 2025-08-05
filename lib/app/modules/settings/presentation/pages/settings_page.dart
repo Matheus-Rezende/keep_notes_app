@@ -5,7 +5,7 @@ import 'package:keep_notes_app/app/modules/core/interactor/states/app_color_them
 import 'package:keep_notes_app/app/modules/core/interactor/stores/app_theme_color_store.dart';
 import 'package:keep_notes_app/app/modules/core/interactor/stores/app_theme_store.dart';
 import 'package:keep_notes_app/app/modules/core/theme/app_theme.dart';
-import 'package:keep_notes_app/app/modules/notes/presentation/widgets/app_bar/custom_app_bar_widget.dart';
+import 'package:keep_notes_app/app/modules/core/presentation/widgets/app_bar/custom_app_bar_widget.dart';
 import 'package:keep_notes_app/app/modules/notes/presentation/widgets/buttons/custom_button_widget.dart';
 
 class SettingsPage extends StatelessWidget {

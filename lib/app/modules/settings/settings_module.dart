@@ -8,7 +8,7 @@ class SettingsModule extends Module {
 
   @override
   void routes(RouteManager r) {
-    r.child(Modular.initialRoute, child: (context) => SettingsPage());
+    r.child(Modular.initialRoute, child: (context) => SettingsPage(), transition: TransitionType.fadeIn);
     super.routes(r);
   }
 }
