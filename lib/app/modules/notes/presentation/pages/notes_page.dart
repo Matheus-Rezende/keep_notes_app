@@ -72,15 +72,16 @@ class _NotesPageState extends State<NotesPage> {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 16.0,
                 children: [
                   Image.asset(
-                    'assets/animations/gif/writing.gif',
+                    'assets/images/png/empty_notes.png',
                     filterQuality: FilterQuality.high,
-                    height: 260.0,
+                    height: 220.0,
                   ),
                   Text(
                     'Crie sua primeira nota!',
-                    style: theme.textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.w300),
+                    style: theme.textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.w300),
                   ),
                 ],
               ),

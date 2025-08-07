@@ -59,7 +59,6 @@ class SettingsPage extends StatelessWidget {
                     Switch.adaptive(
                       value: !themeStore.isLight,
                       onChanged: (value) {
-                        themeColorStore.colorThemeState = themeColorStore.colorThemeState.colorDefaultTheme();
                         themeStore.changeTheme();
                       },
                     ),
